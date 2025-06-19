@@ -1,0 +1,19 @@
+a = int(input("Enter A : "))
+b = int(input("Enter B : "))
+c = int(input("Enter C : "))
+
+if a>b and a>c:
+    if(b>c):
+        print(f"{b} is second largest")
+    else:
+        print(f"{c} is second largest")
+elif b>a and b>c:
+    if(a>c):
+        print(f"{a} is second largest")
+    else:
+        print(f"{c} is second largest")
+else: 
+    if(a>b):
+        print(f"{a} is second largest")
+    else: 
+        print(f"{b} is second largest")
