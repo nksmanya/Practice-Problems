@@ -1,0 +1,13 @@
+x = 10
+y =5
+ht=30
+at = 0 
+mi = 0
+while(at!=ht):
+    mi = mi+1
+    if(mi%2==0):
+        at=at-y
+    else:
+        at = at+x
+print(mi)
+    
