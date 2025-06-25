@@ -1,0 +1,35 @@
+def circle():
+    i = int(input("Enter the radius:"))
+    print(0.5*i*i)
+
+def sq(b):
+    print(b*b)
+    
+def rect(a,b):
+    return a*b
+
+def tri(a,b):
+    return 0.5*a*b
+
+while(True):
+    print("1. Circle    2. Square   3. Rectangle    4.Triangle  ")
+    a = int(input("Enter your choice of shape: "))
+    match a:
+        case 1:
+            circle()
+        case 2: 
+            b = int(input("Enter the side value:"))
+            sq(b)
+        case 3:
+            m = int(input("Enter length: "))
+            n = int(input("Enter breadth: "))
+            res = rect(m,n)
+            print(res)
+        case 4: 
+            a = int(input("Enter base: "))
+            b = int(input("Enter height: "))
+            res1 = tri(a,b)
+            print(res1)
+        case _:
+            break
+    
