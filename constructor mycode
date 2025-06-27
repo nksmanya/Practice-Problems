@@ -1,0 +1,23 @@
+class employee:
+    comp="Cognizant"
+    tax=0.10
+    profit = 50000
+    def __init__(self,name,age,salary,share):
+         self.name=name
+         self.age=age
+         self.salary = salary
+         self.share= share
+    def display(self):
+        print("Name:",self.name)
+        print("Age:",self.age)
+        print("Salary: ",self.salary)
+        print("Company: ",employee.comp)
+        print("Tax to pay: ",employee.tax*self.salary)
+        print("Profit: ",employee.profit*self.share)
+        print("========================")
+s1 = employee("RAM",40,35000,0.24)
+s2 = employee("SUMIT",30,40000,0.34)
+s3 = employee("Manz",20,80000,0.4)
+s1.display()
+s2.display()
+s3.display()
