@@ -1,0 +1,6 @@
+#create a file and write in a txt file
+file=open("bbbbb.txt","r")
+data = file.readlines()
+for i in data:
+    word=i.split()
+    print(word)
