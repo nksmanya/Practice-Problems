@@ -1,0 +1,8 @@
+#QRCode , add_data, make, make_image, save --inbuilt functions to generate qrcode
+import qrcode
+msg="This is dayyyyyy"
+r = qrcode.QRCode()
+r.add_data(msg)
+r.make(fit=True)
+r.make_image(fill_color="black", back_color="white").save("day.png")
+#it will be saved as day.png in the current directory
