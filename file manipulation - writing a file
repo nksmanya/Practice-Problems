@@ -1,0 +1,4 @@
+#writing a file
+file=open("dayyy.txt","w")
+file.write("Hi How are you")
+file.close()
