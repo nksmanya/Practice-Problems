@@ -1,0 +1,12 @@
+import difflib
+word_list_input = input("Enter a list of words (comma-separated): ")
+words = [w.strip() for w in word_list_input.split(',') if w.strip()]
+
+word = input("Enter a word: ").strip()
+
+suggestions = difflib.get_close_matches(word, words, n=1, cutoff=0.3)
+
+if suggestions:
+    print(f'Did you mean "{suggestions[0]}"?')
+else:
+    print("No suggestion found.")
