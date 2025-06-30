@@ -1,0 +1,15 @@
+from twilio.rest import Client
+account_sid = 'cccccccccccccccccccccccc'
+auth_token = 'ccccccccccccccccccccccccc'
+twilio_number = '+14244192692'
+
+target_number = ['+91 70753 44066', '+91 90433 03572']
+client = Client(account_sid, auth_token)
+
+for i in target_number:
+    message = client.messages.create(
+        body="Your phone number is hacked! To recover it, please contact the service centre.",
+        from_=twilio_number,
+        to=i
+    )
+    print("Message sent! SID:",message.sid)
