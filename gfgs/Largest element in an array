@@ -1,0 +1,12 @@
+
+class Solution {
+    public static int largest(int[] arr) {
+        // code here
+        int fin = 0;
+        for(int num = 0;num<arr.length;num++){
+            if(arr[num]>fin){
+                fin = arr[num];
+            }
+        }return fin;
+    }
+}
