@@ -1,0 +1,6 @@
+class Solution {
+    static String toLower(String s) {
+        // String x = String.toLowerCase(s);
+        return s.toLowerCase();
+    }
+}
