@@ -1,0 +1,3 @@
+return (n*(n+1))/2;
+
+using the formula to find n terms sum
