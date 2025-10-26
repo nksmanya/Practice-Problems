@@ -1,0 +1,14 @@
+
+class Solution {
+    static boolean searchInSorted(int arr[], int k) {
+        // Your code here
+        boolean ans = false;
+        for(int ele:arr){
+            if(k ==ele){
+                ans =true;
+            }
+            
+        }
+        return ans;
+    }
+}
