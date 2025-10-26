@@ -1,0 +1,19 @@
+class Solution{
+    static int primeSum(int N){
+       int initial = 0;
+       int sum = 0;
+       while(N>0){
+           initial = N%10;
+           if(initial ==2|| initial ==5|| initial ==7|| initial == 3){
+               sum = sum+initial;
+           }
+           
+           
+           
+           
+           N/=10;
+       }
+       
+       return sum;
+       
+    }
