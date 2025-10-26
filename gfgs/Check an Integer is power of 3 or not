@@ -1,0 +1,5 @@
+class Solution{
+    static String isPowerof3(int N){
+        return 1162261467%N==0?"Yes":"No";
+    }
+}
