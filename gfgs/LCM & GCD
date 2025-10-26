@@ -1,0 +1,15 @@
+class Solution {
+    public static int[] lcmAndGcd(int a, int b) {
+        // code hereint n = a + b;
+                int m=a,n=b;
+        while(b!=0)
+        {
+            int r=a%b;
+            a=b;
+            b=r;
+        }
+        int gcd=a;
+        int lcm=(m*n)/gcd;
+        return new int[]{lcm,gcd};
+    }
+}
