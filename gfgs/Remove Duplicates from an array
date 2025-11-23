@@ -1,0 +1,16 @@
+class Solution {
+    ArrayList<Integer> remDuplicate(int arr[]) {
+        // code here
+        ArrayList<Integer> ans = new ArrayList<>();
+        HashSet<Integer> set = new HashSet<>();
+        for(int a: arr){
+            if(!set.contains(a)){
+                set.add(a);
+                ans.add(a);
+            }
+        }
+        return ans;
+    }
+}
+
+Link : https://www.geeksforgeeks.org/problems/remove-duplicates-in-small-prime-array/1?page=11&category=Arrays&sortBy=submissions 
